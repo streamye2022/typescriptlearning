@@ -21,3 +21,8 @@
 /index.php
 # Ignore temp directory.
 /typo3temp/
+
+.idea/
+
+node_modules/
+package-lock.json
