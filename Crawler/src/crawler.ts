@@ -1,5 +1,5 @@
 import IAnalyzer from "./IAnalyzer";
-import superagent from "superagent";
+// import superagent from "superagent";
 import fs from "fs";
 import path from 'path';
 import STAnalyzer from "./STAnalyzer";
@@ -34,6 +34,6 @@ class Crawler {
 
 }
 
-const url = "https://www.jetbrains.com/zh-cn/webstorm/download/download-thanks.html?platform=mac";
+const url = "http://www.jetbrains.com/zh-cn/webstorm/download/download-thanks.html?platform=mac";
 const resultPath = path.resolve(__dirname, '../data/result.json');
 const crawler = new Crawler(url, resultPath, STAnalyzer.GetInstance())
